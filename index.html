@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NotesPro — Privacy Policy, Terms & Support</title>
+<style>
+:root{
+  --bg:#0A0E17; --card:#111826; --card2:#0D1420;
+  --line:rgba(255,255,255,0.08); --accent:#00D4FF; --accent-dim:#5FD4FF;
+  --text:#E8EEF5; --muted:#8CA2B8; --amber:#FFC94D;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  line-height:1.65;
+}
+header{
+  padding:28px 20px 18px; max-width:760px; margin:0 auto;
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.logo{
+  width:34px;height:34px;border-radius:10px;
+  background:linear-gradient(135deg,#00D4FF,#7B5CFF);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;color:#06111F;font-size:15px;flex:none;
+}
+h1{font-size:19px;font-weight:600;margin:0}
+.sub{color:var(--muted);font-size:13px;margin:0}
+nav{
+  display:flex;gap:8px;max-width:760px;margin:18px auto 0;padding:0 20px;
+  overflow-x:auto;
+}
+nav button{
+  appearance:none;border:1px solid var(--line);background:var(--card2);
+  color:var(--muted);padding:9px 14px;border-radius:999px;font-size:13px;
+  font-family:inherit;cursor:pointer;white-space:nowrap;flex:none;
+  transition:all .15s;
+}
+nav button.active{
+  background:rgba(0,212,255,0.12);border-color:rgba(0,212,255,0.4);
+  color:var(--accent-dim);
+}
+main{max-width:760px;margin:0 auto;padding:22px 20px 60px}
+section{display:none}
+section.active{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+h2{font-size:21px;font-weight:600;margin:0 0 4px}
+.updated{color:var(--muted);font-size:12.5px;margin:0 0 24px}
+h3{font-size:15px;font-weight:600;margin:28px 0 8px;color:var(--text)}
+p{color:#C7D3E0;font-size:14.5px;margin:0 0 12px;max-width:62ch}
+ul{margin:0 0 14px;padding-left:20px}
+li{color:#C7D3E0;font-size:14.5px;margin-bottom:6px;max-width:60ch}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;margin:14px 0;
+}
+.pill{
+  display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:999px;
+  background:rgba(0,212,255,0.1);color:var(--accent-dim);
+  border:1px solid rgba(0,212,255,0.25);margin-bottom:10px;
+}
+.contact-row{
+  display:flex;align-items:center;gap:12px;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;margin-bottom:10px;
+}
+.icon{
+  width:36px;height:36px;border-radius:10px;background:var(--card2);
+  display:flex;align-items:center;justify-content:center;flex:none;
+  font-size:16px;
+}
+.contact-row a{color:var(--accent-dim);text-decoration:none;font-size:13.5px}
+.contact-row a:hover{text-decoration:underline}
+.ct-label{font-size:13px;color:var(--text);font-weight:500;margin:0 0 2px}
+.ct-sub{font-size:12.5px;color:var(--muted);margin:0}
+footer{
+  max-width:760px;margin:0 auto;padding:20px;color:var(--muted);
+  font-size:12px;border-top:1px solid var(--line);text-align:center;
+}
+::selection{background:rgba(0,212,255,0.25)}
+</style>
+</head>
+<body>
 
+<header>
+  <div class="brand">
+    <div class="logo">N</div>
+    <h1>NotesPro</h1>
+  </div>
+  <p class="sub">Free CS &amp; coding notes for students</p>
+</header>
+
+<nav>
+  <button class="active" data-target="privacy">Privacy Policy</button>
+  <button data-target="terms">Terms of Service</button>
+  <button data-target="support">Help &amp; Support</button>
+</nav>
+
+<main>
+
+  <section id="privacy" class="active">
+    <span class="pill">Legal</span>
+    <h2>Privacy Policy</h2>
+    <p class="updated">Last updated: 5 October 2026</p>
+
+    <p>This policy explains what information NotesPro collects, why, and how you can control it. NotesPro is a free app for browsing and downloading study notes.</p>
+
+    <h3>Information we collect</h3>
+    <ul>
+      <li><strong style="color:#fff">Account details</strong> — your name, username, and email address when you sign up, handled through Firebase Authentication.</li>
+      <li><strong style="color:#fff">Usage data</strong> — which notes you view, bookmark, download, and rate, plus your coin balance and completed daily tasks.</li>
+      <li><strong style="color:#fff">Referral data</strong> — your referral code and, if you used one, which member referred you.</li>
+      <li><strong style="color:#fff">Device token</strong> — a Firebase Cloud Messaging token, used only to deliver notifications about new notes.</li>
+      <li><strong style="color:#fff">Proof screenshots</strong> — images you choose to submit when claiming a bonus task, stored with a third-party image host.</li>
+    </ul>
+
+    <h3>How we use it</h3>
+    <ul>
+      <li>To run your account, show your downloads and bookmarks, and track coins you've earned or spent.</li>
+      <li>To review and approve bonus-task submissions.</li>
+      <li>To send you notifications about new notes, if enabled.</li>
+      <li>To show ads through Google AdMob, which may use its own identifiers to personalise ads — see Google's own privacy policy for how AdMob handles data.</li>
+    </ul>
+
+    <h3>Who we share it with</h3>
+    <p>We don't sell your data. We use these services to run the app, and each only receives what it needs to do its job:</p>
+    <ul>
+      <li><strong style="color:#fff">Google Firebase</strong> — authentication, database, and notifications.</li>
+      <li><strong style="color:#fff">Google AdMob</strong> — shows ads and rewards coins for watching them.</li>
+      <li><strong style="color:#fff">Cloudinary</strong> — stores screenshots you submit for bonus tasks.</li>
+    </ul>
+
+    <h3>Your choices</h3>
+    <ul>
+      <li>Edit your profile details any time from the app.</li>
+      <li>Delete your account from <em>Profile → Delete Account</em> — this removes your profile, download history, coins, and bookmarks permanently.</li>
+      <li>Turn off notifications from your device's app settings.</li>
+    </ul>
+
+    <h3>Children's privacy</h3>
+    <p>NotesPro is intended for students and is not directed at children under 13. We don't knowingly collect data from children under 13.</p>
+
+    <h3>Changes to this policy</h3>
+    <p>If this policy changes, the "last updated" date above will change too. Continued use of the app after an update means you accept the revised policy.</p>
+  </section>
+
+  <section id="terms">
+    <span class="pill">Legal</span>
+    <h2>Terms of Service</h2>
+    <p class="updated">Last updated: 5 October 2026</p>
+
+    <p>By creating an account or using NotesPro, you agree to these terms.</p>
+
+    <h3>The service</h3>
+    <p>NotesPro lets you browse, preview, and download study notes shared by the app's admin. Some notes are free; others require coins, which you earn by watching ads or completing bonus tasks.</p>
+
+    <h3>Your account</h3>
+    <ul>
+      <li>You're responsible for keeping your login details secure.</li>
+      <li>One account per person. Don't create multiple accounts to farm referral or coin rewards.</li>
+      <li>We may suspend or remove accounts that abuse the coin system, submit false proof for bonus tasks, or misuse the platform.</li>
+    </ul>
+
+    <h3>Coins and rewards</h3>
+    <ul>
+      <li>Coins have no cash value and can't be exchanged for money.</li>
+      <li>Coins are earned by completing in-app actions (watching ads, referring friends, completing bonus tasks) and spent to unlock paid notes.</li>
+      <li>We may adjust coin rewards or prices at any time.</li>
+      <li>Bonus-task submissions are reviewed manually; approval is at our discretion.</li>
+    </ul>
+
+    <h3>Content</h3>
+    <p>Notes are provided for personal study use. Don't redistribute, resell, or publicly republish downloaded notes without permission.</p>
+
+    <h3>Acceptable use</h3>
+    <p>Don't attempt to bypass download limits, tamper with the app's data, impersonate another user, or use the service for anything unlawful.</p>
+
+    <h3>Disclaimer</h3>
+    <p>Notes are shared as study aids and may contain errors. NotesPro isn't liable for how you use the content or for any academic outcome.</p>
+
+    <h3>Changes</h3>
+    <p>We may update these terms as the app evolves. Continued use after a change means you accept the new terms.</p>
+  </section>
+
+  <section id="support">
+    <span class="pill">We're here to help</span>
+    <h2>Help &amp; Support</h2>
+    <p class="updated">Usually replies within 24–48 hours.</p>
+
+    <div class="contact-row">
+      <div class="icon">✉️</div>
+      <div>
+        <p class="ct-label">Email support</p>
+        <a href="mailto:support@notespro.app">support@notespro.app</a>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="icon">🐛</div>
+      <div>
+        <p class="ct-label">Report a bug</p>
+        <p class="ct-sub" style="margin:0">Tell us what happened and which note or screen it was on — screenshots help.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Common questions</h3>
+
+      <p style="color:#fff;font-weight:500;margin-bottom:4px">A note won't open or download</p>
+      <p>Check your internet connection and try again from inside the app. If it still fails, report it via email with the note's name.</p>
+
+      <p style="color:#fff;font-weight:500;margin-bottom:4px">My coins didn't update after watching an ad</p>
+      <p>Coin credit can take a few seconds to confirm. If it's been more than a minute, reopen the Tasks tab — if it's still missing, email us with your username and the time it happened.</p>
+
+      <p style="color:#fff;font-weight:500;margin-bottom:4px">I want to delete my account</p>
+      <p>Go to <em>Profile → Delete Account</em> inside the app. This permanently removes your data.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>NotesPro — built for students, by students.</footer>
+
+<script>
+var buttons = document.querySelectorAll('nav button');
+var sections = document.querySelectorAll('main section');
+buttons.forEach(function(btn){
+  btn.addEventListener('click', function(){
+    buttons.forEach(function(b){ b.classList.remove('active'); });
+    sections.forEach(function(s){ s.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.target).classList.add('active');
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+});
+</script>
+
+</body>
+</html>
